@@ -1,0 +1,122 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaleHub</title>
+    <link rel="stylesheet" href="../assets/styles/all.min.css" />
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.css"
+      integrity="sha512-cAtZ0Luj6XlQ7YGgi5mPW0szI2z/2+btPjOqVEqK3z4h1/qojUwvQyTcocgKKOFv8noUFH5GOuhheX7PeDwwPA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container align-items-center">
+        <div class="navbar_logo">
+          <h1><a href="#">SaleHub</a></h1>
+        </div>
+        <ul class="navbar_links d-flex flex-row m-0 gap-5 p-0">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="all.html">Buy Now</a></li>
+        </ul>
+        <div class="navbar_form d-flex gap-4">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <span><i class="fa-regular fa-user"></i></span>
+          <span><i class="fa-regular fa-heart"></i></span>
+          <span><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
+        <div class="navbar_toggle hidden">
+          <span><i class="fa-solid fa-bars-staggered"></i></span>
+        </div>
+      </div>
+    </header>
+    <section class="product_detail my-5 py-5">
+      <div class="container d-flex justify-content-center align-items-center">
+        <!-- TTT -->
+        <div
+          class="product_detail_card d-flex justify-content-start align-items-start"
+        >
+          <div class="image">
+            <img id="product_image" src="" alt="" />
+          </div>
+          <div class="descripton ps-4">
+            <h2 class="mb-5" id="product_description">${data.description}</h2>
+            <div class="rate mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="Price" id="product_price"
+              >Price: ${data.description}</span
+            >
+            <div class="counter my-5">
+              <span class="plus"><i class="fa fa-plus"></i></span>
+              <input type="number" value="1" min="0" style="width: 40px" />
+              <span class="minus"><i class="fa fa-minus"></i></span>
+            </div>
+            <div
+              class="buttons d-flex flex-column justify-content-center align-items-start"
+            >
+              <span><a href="#">Add To Wishlist</a></span>
+              <span><a href="#">Add To Cart</a></span>
+            </div>
+          </div>
+        </div>
+        <!-- TTT -->
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row gy-3 d-flex justify-content-between align-items-center">
+          <div class="col-lg-4 text-center">
+            <p>Call Us : +123-456-789</p>
+            <p>info@example.com</p>
+            <p>Monday till Friday 10 to 6 EST</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h2>SaleHub</h2>
+            <p>Copyright © 2021 Vinovathemes. All rights reserved.</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <img
+              src="assets/images/paypal_312bf331-8b71-44a4-8b26-1f4ae8ba8857_240x.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"
+      integrity="sha512-2w85qGM9apXW9EgevsY4S4fnJIUz6U6mXlLbgDKphBuwh7jPQNad70Ll5W+pcIrJ6rIMGpjP0CxYGQwKsynIaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/product.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

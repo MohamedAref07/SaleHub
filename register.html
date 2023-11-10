@@ -1,0 +1,60 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SaleHub</title>
+    <link rel="stylesheet" href="../assets/styles/all.min.css" />
+    <link rel="stylesheet" href="../assets/styles/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.css"
+      integrity="sha512-cAtZ0Luj6XlQ7YGgi5mPW0szI2z/2+btPjOqVEqK3z4h1/qojUwvQyTcocgKKOFv8noUFH5GOuhheX7PeDwwPA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/styles/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="register">
+      <div class="logo">
+        <h1>SaleHub</h1>
+      </div>
+      <form>
+        <h3>Create Account</h3>
+        <div class="form_group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" />
+          <span class="errorMessage"></span>
+        </div>
+        <div class="form_group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" />
+          <span class="errorMessage"></span>
+        </div>
+        <div class="form_group">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+          <span class="errorMessage"></span>
+        </div>
+        <div class="btns">
+          <button class="btn btn-secondary" type="submit">Sign Up</button>
+          <a href="login.html">Have an account</a>
+        </div>
+      </form>
+    </main>
+    <script src="assets/scripts/register.js"></script>
+  </body>
+</html>
